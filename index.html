@@ -14,13 +14,13 @@
       <p class="new-task" id="add-task">
         <label class="new-task__title title__list" for="new-task">Add Item</label>
         <div class="new-task__wrapper">
-          <input id="new-task" class="new-task__input task" type="text">
+          <input class="new-task__input task" type="text" id="new-task">
           <button class="new-task__btn btn" id="btn-add">Add</button>
         </div>
       </p>
       <h3 class="main__title title__list">Todo</h3>
       <ul class="todo__list" id="incomplete-tasks">
-        <li class="todo__task">
+        <li class="todo__task task__content">
           <input class="task__check" type="checkbox">
           <label class="task__title">Pay Bills</label>
           <input type="text" class="task__input task">
@@ -29,7 +29,7 @@
             <img class="task__img_delete img" src="./remove.svg">
           </button>
         </li>
-        <li class="todo__task edit-mode">
+        <li class="todo__task edit-mode__task task__content">
           <input class="task__check" type="checkbox">
           <label class="task__title">Go Shopping</label>
           <input type="text" value="Go Shopping" class="task__input task">
@@ -41,7 +41,7 @@
       </ul>
       <h3 class="main__title title__list">Completed</h3>
       <ul class="completed__list" id="completed-tasks">
-        <li class="completed__task">
+        <li class="completed__task task__content">
           <input class="task__check" type="checkbox" checked>
           <label class="task__title">See the Doctor</label>
           <input type="text" class="task__input task">
