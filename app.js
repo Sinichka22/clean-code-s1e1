@@ -51,7 +51,7 @@ const createNewTaskElement = function(taskString) {
 const addTask = function() {
   console.log("Add Task...");
   //Create a new list item with the text from the #new-task:
-  if (!taskInput.value) return;
+  if (!taskInput.value || !taskInput.value.trim()) return;
   const listItem = createNewTaskElement(taskInput.value);
   //Append listItem to incompleteTaskHolder
   incompleteTaskHolder.appendChild(listItem);
